@@ -1,4 +1,4 @@
-print("Velkommen til demo trekantsberegner, vælg det vil finde")
+print("Velkommen til demo trekantsberegner, vælg det du kender:")
 print("A: Du kender 3 sider")
 print("B: Du kender 2 sider og 1 vinkel.")
 print("C: Du kender 1 side og 2 vinkler.")
@@ -20,7 +20,7 @@ elif 'B' in valg or 'b' in valg:
             print("Din vinkel er valid.")
             break
         else:
-            print("Du har ikke et liv, prøv igen")
+            print("Øv, din vinkel er ikke valid")
 #test
 elif 'C' in valg or 'c' in valg:
     print("Du valgte C")
@@ -32,7 +32,7 @@ elif 'C' in valg or 'c' in valg:
             print("Din vinkeler er valid.")
             break
         else:
-            print("Dræbe dig selv, prøv igen")
+            print("Øv, din vinkler er ikke valid")
 
 else:
     while True:
