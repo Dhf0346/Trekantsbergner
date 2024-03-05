@@ -20,7 +20,7 @@ elif 'B' in valg or 'b' in valg:
             print("Din vinkel er valid.")
             break
         else:
-            print("Øv, din vinkel er ikke valid")
+            print("Øv, din vinkel er ikke valid, prøv igen:")
 #test
 elif 'C' in valg or 'c' in valg:
     print("Du valgte C")
@@ -32,7 +32,7 @@ elif 'C' in valg or 'c' in valg:
             print("Din vinkeler er valid.")
             break
         else:
-            print("Øv, din vinkler er ikke valid")
+            print("Øv, din vinkler er ikke valid, prøv igen:")
 
 else:
     while True:
