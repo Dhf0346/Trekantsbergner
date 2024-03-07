@@ -1,6 +1,6 @@
 while True:
     print("Velkommen til demo trekantsberegner, vælg det du kender:")
-    print("A: Du kender 3 sider")
+    print("A: Du kender 3 sider.")
     print("B: Du kender 2 sider og 1 vinkel.")
     print("C: Du kender 1 side og 2 vinkler.")
     valg=(input("indsæt det du ville bruge:")).lower()
@@ -46,4 +46,5 @@ while True:
     print("Skal du bruge programmet igen?")
     choice = input("Skriv ja eller nej:")
     if 'nej' in choice:
+        print("Tak fordi du brugte programmet :)")
         break
