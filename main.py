@@ -42,4 +42,7 @@ while True:
 
     else:
         print("Du har indtastet noget ugyldig, prøv igen")
-    break
+
+print("Skal du bruge programmet igen?")
+again = input("Skriv ja eller nej:", )
+if 'ja' in agian:
