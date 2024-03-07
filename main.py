@@ -2,15 +2,16 @@ print("Velkommen til demo trekantsberegner, vælg det du kender:")
 print("A: Du kender 3 sider")
 print("B: Du kender 2 sider og 1 vinkel.")
 print("C: Du kender 1 side og 2 vinkler.")
-valg=(input("indsæt det du ville bruge:"))
+valg=(input("indsæt det du ville bruge:")).lower()
 
-if 'A' in valg or 'a' in valg:
+# Kører programet hvis du vælger A eller a
+if 'a' in valg:
     print("Du valgte A")
     side1 = float(input("Hvor lang er den første side?"))
     side2 = float(input("Hvor lang er den anden side?"))
     side3 = float(input("Hvor lang er den sidste side?"))
 
-elif 'B' in valg or 'b' in valg:
+elif 'b' in valg:
     print("Du valgte B")
     while True:
         side1 = float(input("Hvor lang er den første side?"))
@@ -21,8 +22,8 @@ elif 'B' in valg or 'b' in valg:
             break
         else:
             print("Øv, din vinkel er ikke valid, prøv igen:")
-#test
-elif 'C' in valg or 'c' in valg:
+
+elif 'c' in valg:
     print("Du valgte C")
     while True:
         side1 = float(input("Hvor lang er den første side?"))
