@@ -3,7 +3,7 @@ while True:
     print("A: Du kender 3 sider.")
     print("B: Du kender 2 sider og 1 vinkel.")
     print("C: Du kender 1 side og 2 vinkler.")
-    valg=(input("indsæt det du ville bruge:")).lower()
+    valg = (input("indsæt det du ville bruge:")).lower()
 
 # Kører programmet hvis du vælger a eller A.
     if 'a' in valg:
@@ -20,7 +20,7 @@ while True:
             sidea = float(input("Hvor lang er den første side?"))
             sideb = float(input("Hvor lang er den anden side?"))
             vinkel1 = float(input("Hvad er vinklen?"))
-            if vinkel1<180:
+            if vinkel1 < 180:
                 print("Din vinkel er valid.")
                 b_vara = False
             else:
@@ -32,9 +32,9 @@ while True:
         c_vara = True
         while c_vara is True:
             sidea = float(input("Hvor lang er den første side?"))
-            vinkel1= float(input("Hvad er den første vinkel?"))
+            vinkel1 = float(input("Hvad er den første vinkel?"))
             vinkel2 = float(input("Hvad er den anden vinkel?"))
-            if vinkel1 + vinkel2<180:
+            if vinkel1 + vinkel2 < 180:
                 print("Din vinkeler er valid.")
                 c_vara = False
             else:
