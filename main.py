@@ -1,3 +1,6 @@
+from math import *
+
+# Det er loop for hele program endtil brugeren siger nej til sprøgsmålet.
 while True:
     print("Velkommen til demo trekantsberegner, vælg det du kender:")
     print("A: Du kender 3 sider.")
@@ -46,5 +49,5 @@ while True:
     print("Skal du bruge programmet igen?")
     choice = input("Skriv ja eller nej:")
     if 'nej' in choice:
-        print("Tak fordi du brugte programmet :)")
+        print("Tak fordi du brugte denne trekantsberegner :)")
         break
