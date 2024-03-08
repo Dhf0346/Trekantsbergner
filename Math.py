@@ -1,6 +1,7 @@
 import math
 # tak til Mikkel fra 1.r for at hjælpe med det her regner.
 
+
 def pythagoras_hypotenuse(a, b):
     svar = math.sqrt(a**2+b**2)
     return svar

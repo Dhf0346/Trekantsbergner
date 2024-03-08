@@ -2,11 +2,11 @@ from math import *
 
 # Det er loop for hele program endtil brugeren siger nej til sprøgsmålet.
 while True:
-    print("Velkommen til demo trekantsberegner, vælg det du kender:")
+    print("Velkommen til trekantsberegner, vælg det du kender:")
     print("A: Du kender 3 sider.")
     print("B: Du kender 2 sider og 1 vinkel.")
     print("C: Du kender 1 side og 2 vinkler.")
-    valg = (input("indsæt det du ville bruge:")).lower()
+    valg = (input("Indsæt det du ville bruge:")).lower()
 
 # Kører programmet hvis du vælger a eller A.
     if 'a' in valg:
