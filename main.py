@@ -46,6 +46,7 @@ while True:
     else:
         print("Du har indtastet noget ugyldig, prøv igen")
 
+    print('')
     print("Skal du bruge programmet igen?")
     choice = input("Skriv ja eller nej:")
     if 'nej' in choice:
