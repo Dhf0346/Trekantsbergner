@@ -12,8 +12,11 @@ while True:
     if 'a' in valg:
         print("Du valgte A")
         sidea = float(input("Hvor lang er den første side?"))
+        print("Din første side er:", sidea)
         sideb = float(input("Hvor lang er den anden side?"))
+        print("Din anden side er:", sideb)
         sidec = float(input("Hvor lang er den sidste side?"))
+        print("Din anden side er:", sidec)
 
     # Kører programmet hvis du vælger b eller B.
     elif 'b' in valg:
@@ -21,8 +24,11 @@ while True:
         b_vara = True
         while b_vara is True:
             sidea = float(input("Hvor lang er den første side?"))
+            print("Din første side er:", sidea)
             sideb = float(input("Hvor lang er den anden side?"))
+            print("Din anden side er:", sideb)
             vinkel1 = float(input("Hvad er vinklen?"))
+            print("Din første vinkel er:", vinkel1)
             if vinkel1 < 180:
                 print("Din vinkel er valid.")
                 b_vara = False
@@ -35,8 +41,11 @@ while True:
         c_vara = True
         while c_vara is True:
             sidea = float(input("Hvor lang er den første side?"))
+            print("Din anden side er:", sidea)
             vinkel1 = float(input("Hvad er den første vinkel?"))
+            print("Din første vinkel er:", vinkel1)
             vinkel2 = float(input("Hvad er den anden vinkel?"))
+            print("Din anden vinkel er:", vinkel2)
             if vinkel1 + vinkel2 < 180:
                 print("Din vinkeler er valid.")
                 c_vara = False
