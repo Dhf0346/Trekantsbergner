@@ -73,11 +73,11 @@ while True:
                     print("Din anden vinkel er:", vinkel2)
 
                     if vinkel1 + vinkel2 < 180:
-                        print("Din vinkeler er valid.")
+                        print("Din vinkeler er gyldig.")
                         c_vara = False
                         sidesCheck = False
                     else:
-                        print("Øv, din vinkler er ikke valid, prøv igen:")
+                        print("in vinkler er ikke valid, prøv igen:")
 
             except ValueError:
                 print('')
