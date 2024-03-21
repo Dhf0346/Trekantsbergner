@@ -77,7 +77,7 @@ while True:
                         c_vara = False
                         sidesCheck = False
                     else:
-                        print("in vinkler er ikke valid, prøv igen:")
+                        print("Din vinkler er ugyldig, prøv igen:")
 
             except ValueError:
                 print('')
