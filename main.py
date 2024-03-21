@@ -10,7 +10,7 @@ while True:
     print("A: Du kender 3 sider.")
     print("B: Du kender 2 sider og 1 vinkel.")
     print("C: Du kender 1 side og 2 vinkler.")
-    valg = (input("Indsæt det du ville bruge:")).lower()
+    valg = (input("Indsæt det du ville bruge:")). lower()
 
 # Kører programmet hvis du vælger a eller A.
     if 'a' in valg:
@@ -51,7 +51,7 @@ while True:
                         b_vara = False
                         sidesCheck = False
                     else:
-                        print("Øv, din vinkel er ikke valid, prøv igen:")
+                        print("Din vinkel er ugyldig, prøv igen:")
 
                 except ValueError:
                     print('')
