@@ -24,6 +24,22 @@ while True:
                 print("Din anden side er:", sideb)
                 sidec = float(input("Hvor lang er den sidste side?"))
                 print("Din anden side er:", sidec)
+
+                print("Side a er:", sidea)
+                print("Side b er:", sideb)
+                print("Side c er:", sidec)
+                vinkelA = cosinusrelation_vinkel_vil(sidea, sideb, sidec)
+                print("Vinkel A er:", vinkelA)
+                vinkelB = sinusrelation_vinkel_vil(sidea, sidec, vinkelA)
+                print("Vnkel B er:", vinkelB)
+                vinkelC = vinkelsum(vinkelA, vinkelB)
+                print("Vinkel C er:", vinkelC)
+
+                if vinkelA + vinkelB + vinkelC < 180:
+                    print("")
+                else:
+                    print("Din trekant er ugyldig")
+
                 break
 
             except ValueError:
@@ -46,7 +62,7 @@ while True:
                     print("Din anden side er:", side2)
                     vinkel1 = float(input("Hvad er vinklen?"))
                     print("Din første vinkel er:", vinkel1)
-                    # Tjekker om din trekant kan laves fordi hvis din første to vinkler er over 180 så kan trekant ikke laves.
+                    # Tjekker om din trekant kan laves.
                     if vinkel1 < 180:
                         print("Din vinkel er valid.")
                         b_vara = False
