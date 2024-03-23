@@ -7,7 +7,7 @@ danishDage = {
     'Tuesday': 'Tirsdag',
     'Wednesday': 'Onsdag',
     'Thursday': 'Torsdag',
-    'Fridag': 'Fredag',
+    'Friday': 'Fredag',
     'Saturday': 'Lørdag',
     'Sunday': 'Søndag'
 }
