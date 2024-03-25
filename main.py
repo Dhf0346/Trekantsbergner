@@ -23,29 +23,33 @@ while True:
                 sideb = float(input("Hvor lang er den anden side?"))
                 print("Din anden side er:", sideb)
                 sidec = float(input("Hvor lang er den sidste side?"))
-                print("Din anden side er:", sidec)
+                print("Din tredje side er:", sidec)
 
                 print("Side a er:", sidea)
                 print("Side b er:", sideb)
                 print("Side c er:", sidec)
-                vinkelA = cosinusrelation_vinkel_vil(sidea, sideb, sidec)
-                print("Vinkel A er:", vinkelA)
-                vinkelB = sinusrelation_vinkel_vil(sidea, sidec, vinkelA)
-                print("Vnkel B er:", vinkelB)
+
+                vinkelA = cosinusrelationVinkelA(sidea, sideb, sidec)
+                roundVinkelA = round(vinkelA, 3)
+                print("Vinkel A er:", roundVinkelA)
+
+                vinkelB = cosinusrelationVinkelB(sidea, sideb, sidec)
+                roundVinkelB = round(vinkelB, 3)
+                print("Vnkel B er:", roundVinkelB)
+
                 vinkelC = vinkelsum(vinkelA, vinkelB)
-                print("Vinkel C er:", vinkelC)
-
-                if vinkelA + vinkelB + vinkelC < 180:
-                    print("")
-                else:
-                    print("Din trekant er ugyldig")
-
+                roundVinkelC = round(vinkelC, 3)
+                print("Vinkel C er:", roundVinkelC)
                 break
 
             except ValueError:
                 print('')
                 print("Du har indtastet noget ugyldig, prøv igen:")
 
+        if roundVinkelA + roundVinkelB + roundVinkelC <= 180:
+            print("")
+        else:
+            print("Din trekant er ugyldig")
 
 # Kører programmet hvis du vælger b eller B.
     elif 'b' in valg:
@@ -70,8 +74,8 @@ while True:
                     else:
                         print("Din vinkel er ugyldig, prøv igen:")
 
-                    print("Side A er:", side1)
-                    print("side B er:", side2)
+                    print("Side a er:", side1)
+                    print("Side b er:", side2)
                     print("Side c er:", pythagoras_hypotenuse(side1, side2))
 
                 except ValueError:

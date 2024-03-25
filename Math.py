@@ -77,10 +77,14 @@ def sinusrelation_side_vil(side, vinkel, vinkel1):
     return svar
 
 
-def cosinusrelation_vinkel_vil(side1, side2, side3):
+def cosinusrelationVinkelA(side1, side2, side3):
     svar = math.degrees(math.acos((side2**2+side3**2-side1**2)/(2*side2*side3)))
     return svar
 
+
+def cosinusrelationVinkelB(side1, side2, side3):
+    svar = math.degrees(math.acos((side1**2 + side3**2 - side2**2)/(2*side1*side3)))
+    return svar
 
 def sinusrelation_vinkel_vil(side1, side2, vinkel):
     svar = math.degrees(math.asin((side1*math.sin(math.radians(vinkel)))/side2))
