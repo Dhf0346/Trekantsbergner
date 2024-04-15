@@ -74,9 +74,12 @@ while True:
                     else:
                         print("Din vinkel er ugyldig, prøv igen:")
 
-                    print("Side a er:", side1)
-                    print("Side b er:", side2)
-                    print("Side c er:", pythagoras_hypotenuse(side1, side2))
+                    print("Din første side er:", side1)
+                    print("Din anden side er:", side2)
+                    print("Din sidste side:", cosinusrelation_side_vil(side1, side2, vinkel1))
+                    print("Din første vinkel er:", vinkel1)
+                    print("Din anden vinkel er:", sinusrelation_vinkel_vil(side1, side2, vinkel1))
+                    print("Din sidste vinkel er:")
 
                 except ValueError:
                     print('')

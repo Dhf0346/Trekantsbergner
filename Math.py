@@ -62,11 +62,6 @@ def vinkelsum(vinkel1, vinkel2):
     return svar
 
 
-def areal_ret(side1, side2, vinkel):
-    svar = (1/2)*side1*side2*math.sin(math.radians(vinkel))
-    return svar
-
-
 def cosinusrelation_side_vil(side1, side2, vinkel):
     svar = math.sqrt(side1**2+side2**2-2*side1*side2*math.cos(math.radians(vinkel)))
     return svar
@@ -85,6 +80,7 @@ def cosinusrelationVinkelA(side1, side2, side3):
 def cosinusrelationVinkelB(side1, side2, side3):
     svar = math.degrees(math.acos((side1**2 + side3**2 - side2**2)/(2*side1*side3)))
     return svar
+
 
 def sinusrelation_vinkel_vil(side1, side2, vinkel):
     svar = math.degrees(math.asin((side1*math.sin(math.radians(vinkel)))/side2))
